@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+/* Base CSS */
+body {
+  font-family: "Electrolize", sans-serif;
+}
+
+.container {
+  background-color: black;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-color: black;
+  height: 50px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 55px;
+}
+
+.logo {
+  color: rgb(255, 70, 70);
+  font-size: 30px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+  padding: 0;
+}
+
+.menu-list-item {
+  cursor: pointer;
+}
+
+.menu-list-item:hover {
+  font-weight: bold;
+}
+
+.menu-list-item:active {
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-text-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  line-height: 1;
+}
+
+.toggle {
+  width: 40px;
+  background-color: white;
+  position: relative;
+  height: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toggle-icon {
+  color: goldenrod;
+}
+
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  transition: 0.5s ease-in all;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  row-gap: 40px;
+  position: fixed;
+  top: 0;
+}
+
+.sidebar i {
+  color: white;
+  font-size: 20px;
+}
+
+/* Featured Section */
+.content-wrapper {
+  margin-left: 50px;
+}
+
+.featured-content {
+  background: url("img/spiderman.jpg") no-repeat center center; 
+  background-size: cover; 
+  padding: 50px;
+  height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.featured-title {
+  width: 400px;
+}
+
+.featured-desc {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  margin: 20px auto;
+  color: black;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+.featured-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 15px; 
+  margin-top: 20px;
+}
+
+.featured-buttons button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease all;
+}
+
+.featured-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.featured-buttons .info-button {
+  background-color: rgb(145, 142, 142, 0.8);
+  color: white;
+}
+
+/* Movie List */
+.movie-list-filter {
+  margin: 20px 0 20px 50px;
+  padding: 20px;
+}
+
+.movie-list-filter select {
+  background-color: black;
+  color: white;
+  padding: 8px 0;
+  width: 125px;
+}
+
+.movie-list-container {
+  margin-left: 70px;
+}
+
+.movie-list {
+  list-style: none;
+  padding: 0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  transform: translateX(0);
+  transition: 1s ease all;
+}
+
+.movie-list-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.movie-item {
+  position: relative;
+}
+
+.movie-item:hover .movie-item-title,
+.movie-item:hover .movie-item-buttons {
+  opacity: 1;
+}
+
+.movie-item:hover .movie-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-item-img {
+  width: 270px;
+  height: 170px;
+  object-fit: cover;
+  transition: 1s all ease;
+}
+
+.movie-item-title {
+  background-color: rgb(40, 40, 40, 0.4);
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.movie-item-buttons {
+  background-color: rgb(40, 40, 40, 0.4);
+  padding: 10px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;
+  left: 50px;
+  display: flex;
+  column-gap: 20px;
+  transition: 1s all ease;
+  opacity: 0;
+}
+
+.movie-item-buttons i {
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+.movie-item-buttons i:hover {
+  opacity: 1;
+}
+
+.arrow {
+  width: 100px;
+  display: flex;
+  font-size: 120px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  opacity: 0.5;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  opacity: 1;
+  transform: 0.5s ease all;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.navbar.active {
+  background-color: white;
+  color: black;
+}
+
+.sidebar.active {
+  background-color: white;
+  color: black;
+}
+
+.sidebar i.active {
+  color: black;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.toggle.active {
+  background-color: black;
+}
+
+.toggle-ball.active {
+  background-color: white;
+  transform: translateX(-20px);
+  transition: 0.5s ease-in all;
+}
+
+.movie-list-filter select.active {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .navbar-wrapper {
+    padding: 0 20px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .featured-content {
+    height: 70vh;
+    padding: 20px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .featured-title {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .featured-desc {
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 90%;
+  }
+
+  .featured-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .featured-buttons button {
+    font-size: 14px;
+    padding: 8px 15px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .movie-item-img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .arrow {
+    font-size: 80px;
+    top: 50px;
+  }
+
+  .sidebar {
+    width: 40px;
+    row-gap: 20px;
+  }
+
+  .sidebar i {
+    font-size: 16px;
+  }
+}
