@@ -39,7 +39,7 @@ Bu layihə, film və serialları veb interfeys vasitəsilə təqdim edən **Feri
 
 ## 📷 Ekran Görüntüsü
 
-Asets/ScreenRecording2025-05-09181952-ezgif.com-optimize.gif
+![Demo](https://raw.githubusercontent.com/Ferid18/your-repo-name/main/Assets/ScreenRecording2025-05-09181952-ezgif.com-optimize.gif)
 
 
 
