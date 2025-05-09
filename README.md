@@ -39,7 +39,7 @@ Bu layihə, film və serialları veb interfeys vasitəsilə təqdim edən **Feri
 
 ## 📷 Ekran Görüntüsü
 
-Assets/ScreenRecording2025-05-09181952-ezgif.com-optimize.gif
+(https://github.com/Mickekofi/EyeTubeBot/blob/master/eyetubebot.gif
 
 
 
