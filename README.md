@@ -5,7 +5,7 @@ Bu layihə, film və serialları veb interfeys vasitəsilə təqdim edən **Feri
 ## 📌 Saytın Xüsusiyyətləri
 
 - 🔝 **Navbar və Sidebar**: Asan naviqasiya üçün menyular.
-- 🌙 **Dark/Light rejimi keçid düyməsi** (dizaynda mövcuddur, funksionallıq JS ilə əlavə edilə bilər).
+- 🌙 **Dark/Light rejimi keçid düyməsi** 
 - 🦸‍♂️ **Tanıtım bölməsi**: Məşhur filmlər üçün əsas təqdimat (hazırda Spider-Man üçün var).
 - 🎞️ **Film siyahıları**: "Populyar" və "Gündəm" başlıqları altında filmlər göstərilir.
 - 🎛️ **Filter Sistemi**: Janr seçimi üçün açılan menyu.
@@ -27,9 +27,6 @@ Bu layihə, film və serialları veb interfeys vasitəsilə təqdim edən **Feri
 - CSS3
 - [Bootstrap Icons](https://icons.getbootstrap.com/) (CDN ilə daxil edilib)
 
-## 🖼️ Demo Şəkillər (İstəyə bağlı əlavə oluna bilər)
-
-Əgər `GitHub Pages` və ya başqa bir platformada yerləşdirilibsə, burada link verilə bilər:
 
 
 ## 📌 Gələcəkdə əlavə edilə biləcək funksiyalar
@@ -42,7 +39,8 @@ Bu layihə, film və serialları veb interfeys vasitəsilə təqdim edən **Feri
 
 ## 📷 Ekran Görüntüsü
 
-> **Əlavə edin:** `` kimi bir ekran görüntüsü əlavə edib burada göstərə bilərsiniz.
+>![Demo](Assets/ScreenRecording2025-05-09181952-ezgif.com-optimize.gif)
+
 
 ## 🧑‍💻 Müəllif
 
