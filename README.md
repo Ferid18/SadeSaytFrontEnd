@@ -12,7 +12,6 @@ Bu layihə, film və serialları veb interfeys vasitəsilə təqdim edən **Feri
 - 🖱️ **Hover animasiyaları və ikon düymələr**: İstifadəçi təcrübəsini artırmaq üçün interaktiv dizayn.
 
 ## 📁 Layihə Strukturu
-
 /project-root
 │
 ├── index.html # Əsas HTML faylı
