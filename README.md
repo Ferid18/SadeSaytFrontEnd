@@ -37,10 +37,6 @@ Bu layihə, film və serialları veb interfeys vasitəsilə təqdim edən **Feri
 - 🌓 Tam işləyən Dark Mode
 - 🎬 Video player inteqrasiyası
 
-## 📷 Ekran Görüntüsü
-
-https://github.com/Ferid18/SadeSaytFrontEnd/blob/main/Assets/ScreenRecording2025-05-09181952-ezgif.com-optimize.gif
-
 
 
 ## 🧑‍💻 Müəllif
